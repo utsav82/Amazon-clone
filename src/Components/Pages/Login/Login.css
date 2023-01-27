@@ -1,0 +1,145 @@
+.login{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 22px;
+}
+.login__container{
+    max-height: 350px;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 26px;
+    background: #fff;
+    
+}
+.login__container > h1{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    padding-bottom: 4px;
+}
+.login__container > div > label > h4{
+    padding-left: 2px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    
+}
+.login__container > div  > label >input{
+    width: 100%;
+    background-color: #fff;
+    height: 23px;
+    border: 1px solid rgb(137, 136, 136); 
+    border-radius: 4px;
+    outline: none;
+    padding: 3px 7px;
+    line-height: normal;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.btn__container{
+    width: 100%;
+    background: #f3d078;
+    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);    
+    color: #111;
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+.btn__container:hover{
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+.btn__container> button{
+    cursor: pointer;
+    padding: 3px 7px;
+    width: 100%;    
+    background: transparent;
+    border: none;
+    outline:none;
+}
+.login__container > section{
+    margin-bottom: 22px;
+}
+.login__legal{
+    
+    font-size: 12px!important;
+    line-height: 1.5!important;
+    margin-top: 18px!important;     
+}
+.login__legal a{
+    text-decoration: none;
+    color: #0066c0;
+}
+.login__legal a:hover{
+    text-decoration:underline;
+}
+
+.login__logo{
+    display: flex;
+    width: 100px;    
+    object-fit: contain;
+}
+.sign_up{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    min-width: 280px;
+}
+.sign_up > h5{
+    margin-top: -7px;
+    line-height: 1;
+    font-size: 12px;
+    color: #0c0c0cab;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 8px 0 7px;
+}
+.sign_up::after{
+    content: "";   
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #e7e7e7;
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+}
+.btn__container_{    
+    width: 100%;
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 3px 7px;
+    text-align: center;
+    text-decoration: none;    
+}
+.btn__container_:hover{
+    background: #eff0f3;
+    background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+}
+.btn__container_  button{
+    cursor: pointer;
+    padding: 3px 7px;
+    width: 100%;    
+    background: transparent;
+    border: none;
+    outline:none;
+}
+.amazon-logo{
+    width: 100px;
+}

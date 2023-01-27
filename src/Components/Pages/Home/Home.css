@@ -1,0 +1,32 @@
+.home{
+   background-color: #eaeded;
+   min-width: 1000px;
+}
+.home-container{
+ display: flex;
+ flex-direction: column;
+ min-width: 1000px;
+}
+.category-row{
+   display: flex;
+   justify-items: center;
+   overflow: hidden;
+   z-index: 1;
+}
+.product-row{
+   z-index: 1;
+   display: flex;
+   justify-items: center;
+   justify-content: space-around;
+   overflow: hidden;
+   /* margin-left: 5px; */
+}
+.product-row-3{
+   /* z-index: 1; */
+   display: flex;
+   /* justify-items: center; */
+   /* justify-content: space-around; */
+   /* overflow: hidden; */
+   /* margin-left: 5px; */
+   /* align-items: center; */
+}

@@ -1,0 +1,52 @@
+.footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+    width: 100%;
+    min-width: 1000px;
+}
+.footer_btn {
+    background-color: #37475a;
+    color: #fff;
+    font-size: 15px;
+    bottom: 0.5rem;
+    padding: 10px 10px;
+    width: 100% ;
+    border: none;
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+.footer_btn_container{
+    display: flex;
+    text-align: center;
+    width: 100%;          
+  
+}
+.footer__info{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: #232f3e;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    gap: 25px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.footer__logo{
+    display: flex;
+    height: 50px;
+    /* width: 100px; */
+}
