@@ -12,7 +12,7 @@ const express = require("express");
 const cors = require("cors");
 
 const stripe = require("stripe")(
-  "sk_test_51LdwHfSISE5qAaajwxagwwWiWiufpLOMnQZ2WGyKaR8gw8F7wIS9Meso4NufZcFn2mpAh9MzUDx2VvI0P89GpESR00om6FwTCP"
+  "sk_test_51Mmea2SHeAg5kRjVbheY0sfmdY909R5plmOww4PnlFXFEQKnCBCiS4GGkG3EjDVAAes3YI0jeeG8oWh0OXjXmEdN00vCTVfrCL"
 );
 
 const app = express();
@@ -22,7 +22,7 @@ app.use(express.json());
 app.get("/", (request, response) => {
   response.status(200).send("Hello from cloud");
 });
-app.get("/payments/create", async (request, response) => {
+app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
   const payment = await stripe.paymentIntents.create({
     amount: total,

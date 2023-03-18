@@ -22,11 +22,11 @@ function Payment() {
     console.log(user);
     const amt = getBasketTotal(basket) * 100;
     const getClientSecret = async () => {
-      const URL = `http://localhost:5001/clone-9b7d4/us-central1/api/payments/create?total=${amt}`;
+      const URL = `http://localhost:5001/clone-8c06e/us-central1/api/payments/create?total=${amt}`;
 
       if (amt != 0) {
         const response = await axios({
-          method: "GET",
+          method: "POST",
           url: URL,
         });
         setClientSecret(response.data.clientSecret);
@@ -56,11 +56,10 @@ function Payment() {
           amount: paymentIntent.amount,
           created: paymentIntent.created,
         });
-
         setSucceeded(true);
         setError(null);
         setProcessing(false);
-        navigate("/orders");
+        navigate('/orders', { replace: true });
       });
   };
   const handleChange = (e) => {
