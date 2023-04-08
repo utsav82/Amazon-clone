@@ -103,11 +103,7 @@ function Payment() {
               <div className="payment__priceContainer">
                 <p>
                   Order Total{" "}
-                  {new Intl.NumberFormat("en-IN", {
-                    style: "currency",
-                    minimumFractionDigits: 2,
-                    currency: "INR",
-                  }).format(getBasketTotal(basket))}
+                  {getBasketTotal(basket)}
                 </p>
               </div>
               <div className="payment__btn_container">
